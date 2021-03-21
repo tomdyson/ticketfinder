@@ -1,6 +1,7 @@
 describe('My First Test', () => {
     it('Visits Ticketmaster', () => {
-        cy.visit('https://www.ticketmaster.co.uk/event/1F005710D6056351')
+        // cy.visit('https://www.ticketmaster.co.uk/event/1F005710D6056351')
+        cy.visit('https://www.torchbox.com/')
         cy.contains('Accept').click()
         cy.get('[data-testid=tselectionSpinbuttonMinus]').click()
         cy.contains('Find Tickets').click()
